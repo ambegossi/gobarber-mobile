@@ -11,7 +11,7 @@ export default function createRouter(isSigned = false) {
   return !isSigned ? (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="SignIn" component={SignIn} />
-      <Stack.Screen name="SignOut" component={SignUp} />
+      <Stack.Screen name="SignUp" component={SignUp} />
     </Stack.Navigator>
   ) : null;
 }
