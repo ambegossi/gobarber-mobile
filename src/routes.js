@@ -9,6 +9,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
 import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
 
 const Stack = createStackNavigator();
 const Tabs = createBottomTabNavigator();
@@ -26,6 +27,10 @@ export default function createRouter(isSigned = false) {
         inactiveTintColor: 'rgba(255, 255, 255, 0.6)',
         style: {
           backgroundColor: '#8d41a8',
+          height: 60,
+          paddingTop: 8,
+          paddingBottom: 5,
+          borderTopColor: '#8d41a8',
         },
         keyboardHidesTabBar: true,
       }}
@@ -37,6 +42,17 @@ export default function createRouter(isSigned = false) {
           tabBarLabel: 'Agendamentos',
           tabBarIcon: ({ color }) => (
             <Icon name="event" size={20} color={color} />
+          ),
+        }}
+      />
+
+      <Tabs.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarLabel: 'Meu Perfil',
+          tabBarIcon: ({ color }) => (
+            <Icon name="person" size={20} color={color} />
           ),
         }}
       />
