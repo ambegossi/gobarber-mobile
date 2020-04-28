@@ -22,7 +22,7 @@ export default function Appointment({ data, onCancel }) {
             uri: data.provider.avatar
               ? data.provider.avatar.url.replace(
                   'localhost:3333',
-                  '3017d64b.ngrok.io'
+                  '4fb985a7.ngrok.io'
                 )
               : `https://api.adorable.io/avatar/50/${data.provider.name}.png`,
           }}
