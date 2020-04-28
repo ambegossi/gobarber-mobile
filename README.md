@@ -51,8 +51,6 @@ Project developed at the [Rocketseat GoStack Bootcamp 🚀👨🏻‍🚀](https
 
 ## :rocket: Technologies
 
-This project was developed at the [RocketSeat GoStack Bootcamp](https://rocketseat.com.br/bootcamp) with the following technologies:
-
 -  [React Native](https://reactnative.dev/)
 -  [babel-plugin-root-import](https://github.com/entwicklerstube/babel-plugin-root-import)
 -  [react-navigation](https://reactnavigation.org/)
